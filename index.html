@@ -291,8 +291,73 @@
             </div>
         </section>
 
-        <!-- SLIDE 3: LECTURA TÉCNICA -->
-        <section id="slide-3" class="slide flex-col w-full space-y-6">
+        <!-- SLIDE 3: EVIDENCIAS FOTOGRÁFICAS DOCUMENTADAS -->
+        <section id="slide-3" class="slide flex-col w-full space-y-5">
+            <div class="border-b border-slate-800 pb-3 flex justify-between items-end">
+                <div>
+                    <span class="text-xs font-bold text-indigo-400 uppercase tracking-widest">Evidencias Fotográficas</span>
+                    <h2 class="text-2xl md:text-3xl font-bold text-white">Documentación & Capturas Reales (OSINT)</h2>
+                </div>
+                <span class="text-xs bg-slate-900 border border-slate-800 text-slate-400 px-3 py-1 rounded-lg hidden md:block">Evidencia del Informe OSINT</span>
+            </div>
+
+            <!-- Image Evidence Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <!-- Evidencia 1: Cart Endpoint -->
+                <div class="glass-card p-3.5 rounded-2xl space-y-3 flex flex-col justify-between border-t-2 border-t-cyan-500">
+                    <div>
+                        <div class="flex items-center justify-between mb-1.5">
+                            <span class="text-xs font-bold text-cyan-400">Hallazgo 02 · Endpoint `/cart.js`</span>
+                            <span class="text-[10px] bg-cyan-500/10 text-cyan-300 border border-cyan-500/20 px-2 py-0.5 rounded">Shopify JSON</span>
+                        </div>
+                        <p class="text-[11px] text-slate-400 leading-tight">
+                            Verificación de respuesta pública del endpoint `/cart.js` de la plataforma Shopify con datos vivos.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-slate-950 border border-slate-800 rounded-xl overflow-hidden shadow-lg hover:border-cyan-500/50 transition">
+                        <img src="assets/evidencia_hallazgo2_cart.png" alt="Evidencia Endpoint /cart.js" class="w-full h-44 object-cover object-top hover:scale-105 transition duration-300 cursor-pointer" onclick="window.open(this.src)">
+                    </div>
+                </div>
+
+                <!-- Evidencia 2: Wayback Machine Leak -->
+                <div class="glass-card p-3.5 rounded-2xl space-y-3 flex flex-col justify-between border-t-2 border-t-rose-500 bg-rose-950/10">
+                    <div>
+                        <div class="flex items-center justify-between mb-1.5">
+                            <span class="text-xs font-bold text-rose-400">Hallazgo 03 · Metadatos Wayback</span>
+                            <span class="text-[10px] bg-rose-500/10 text-rose-300 border border-rose-500/20 px-2 py-0.5 rounded">Fuga en CSS</span>
+                        </div>
+                        <p class="text-[11px] text-slate-300 leading-tight">
+                            Exposición del desarrollador (<strong class="text-white">Author: Patrick Glynn</strong>) en comentario de archivo CSS archivado en `web.archive.org`.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-950 border border-rose-900/40 rounded-xl overflow-hidden shadow-lg hover:border-rose-500/50 transition">
+                        <img src="assets/evidencia_hallazgo3_wayback.png" alt="Evidencia Wayback Machine CSS Leak" class="w-full h-44 object-cover object-top hover:scale-105 transition duration-300 cursor-pointer" onclick="window.open(this.src)">
+                    </div>
+                </div>
+
+                <!-- Evidencia 3: GitHub Hamburguers Repo -->
+                <div class="glass-card p-3.5 rounded-2xl space-y-3 flex flex-col justify-between border-t-2 border-t-slate-600">
+                    <div>
+                        <div class="flex items-center justify-between mb-1.5">
+                            <span class="text-xs font-bold text-slate-400">Hallazgo 04 · GitHub "hamburguers"</span>
+                            <span class="text-[10px] bg-slate-800 text-slate-400 border border-slate-700 px-2 py-0.5 rounded">Descartado</span>
+                        </div>
+                        <p class="text-[11px] text-slate-400 leading-tight">
+                            Inspección pasiva del repositorio público para verificar ausencia de datos productivos (animaciones CSS).
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-950 border border-slate-800 rounded-xl overflow-hidden shadow-lg hover:border-slate-600 transition">
+                        <img src="assets/evidencia_hallazgo4_github.png" alt="Evidencia Repositorio GitHub Hamburguers" class="w-full h-44 object-cover object-top hover:scale-105 transition duration-300 cursor-pointer" onclick="window.open(this.src)">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 4: LECTURA TÉCNICA -->
+        <section id="slide-4" class="slide flex-col w-full space-y-6">
             <div class="border-b border-slate-800 pb-3">
                 <span class="text-xs font-bold text-cyan-400 uppercase tracking-widest">Movimiento 3</span>
                 <h2 class="text-2xl md:text-3xl font-bold text-white">Lectura Técnica & Causa Raíz</h2>
@@ -334,8 +399,8 @@
             </div>
         </section>
 
-        <!-- SLIDE 4: LECTURA DE GOBERNANZA DMBOK (ROLES & RESPONSABILIDADES) -->
-        <section id="slide-4" class="slide flex-col w-full space-y-6">
+        <!-- SLIDE 5: LECTURA DE GOBERNANZA DMBOK (ROLES & RESPONSABILIDADES) -->
+        <section id="slide-5" class="slide flex-col w-full space-y-6">
             <div class="border-b border-slate-800 pb-3 flex justify-between items-end">
                 <div>
                     <span class="text-xs font-bold text-indigo-400 uppercase tracking-widest">Movimiento 4</span>
@@ -387,8 +452,8 @@
             </div>
         </section>
 
-        <!-- SLIDE 5: PROPUESTA COMERCIAL -->
-        <section id="slide-5" class="slide flex-col w-full space-y-6">
+        <!-- SLIDE 6: PROPUESTA COMERCIAL -->
+        <section id="slide-6" class="slide flex-col w-full space-y-6">
             <div class="border-b border-slate-800 pb-3 flex justify-between items-end">
                 <div>
                     <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest">Movimiento 5</span>
@@ -453,8 +518,8 @@
             </div>
         </section>
 
-        <!-- SLIDE 6: CIERRE -->
-        <section id="slide-6" class="slide flex-col justify-center items-center text-center w-full max-w-4xl space-y-8">
+        <!-- SLIDE 7: CIERRE -->
+        <section id="slide-7" class="slide flex-col justify-center items-center text-center w-full max-w-4xl space-y-8">
             <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-indigo-600 via-cyan-500 to-emerald-400 flex items-center justify-center shadow-xl shadow-indigo-500/20">
                 <i data-lucide="quote" class="w-8 h-8 text-white"></i>
             </div>
@@ -500,7 +565,7 @@
     <!-- Presentation Engine JS -->
     <script>
         let currentSlide = 1;
-        const totalSlides = 6;
+        const totalSlides = 7;
 
         function updateSlide() {
             // Hide all slides
