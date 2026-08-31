@@ -49,7 +49,9 @@
   > 1. **Diferenciación de Roles DMBOK (Data Owner vs. Data Steward):**
   >    * **Data Owner (Dueño del Dato):** Es el líder ejecutivo (*Head of E-commerce / CISO*) responsable de las **decisiones estratégicas**, el valor del negocio, las políticas de publicación y la aceptación del riesgo sobre el dominio.
   >    * **Data Steward (Custodio del Dato):** Es la persona con la **responsabilidad operativa y técnica** (*Lead Frontend / DevOps Steward*) encargada de auditar la calidad, ejecutar la sanitización de comentarios y realizar la custodia formal del activo web antes de salir a producción.
-  > 2. **Clasificación de la Información:** Las identidades del equipo técnico no debieron tratarse como públicas, sino etiquetarse como **Información Interna o Restringida**.
+  > 2. **Política y Taxonomía de Clasificación de Datos (DMBOK Security):**
+  >    * DMBOK en el área de *Data Security* exige que la organización **defina y documente su propia Taxonomía de Clasificación de Seguridad y Confidencialidad**.
+  >    * La falla de gobernanza aquí consistió en la **ausencia de una política institucional de clasificación de metadatos técnicos**. No existía un análisis de riesgo documentado que determinara si la visibilidad de los metadatos de autoría y entornos de prueba era admisible o no antes del despliegue público.
   > 3. **Política de Sanitización (Build Sanitization) & Comité:** El Comité de Gobernanza debe institucionalizar la regla de desaprobación automática de código con comentarios o metadatos de desarrollador antes del despliegue."
 
 ---
