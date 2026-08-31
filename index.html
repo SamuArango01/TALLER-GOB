@@ -110,30 +110,54 @@
                 </p>
             </div>
 
-            <!-- Team & Org Cards -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 w-full pt-4">
-                <div class="glass-card p-4 rounded-2xl text-left border-l-4 border-l-indigo-500">
-                    <span class="text-xs font-medium text-slate-400 block uppercase tracking-wider">Organización</span>
-                    <span class="text-lg font-bold text-white flex items-center mt-1">
-                        <i data-lucide="shopping-bag" class="w-4 h-4 mr-2 text-indigo-400"></i> Monastery.com.co
+            <!-- Team Members & Org Info Cards -->
+            <div class="space-y-4 w-full pt-2">
+                <!-- Team Members Grid -->
+                <div class="glass-card p-4 rounded-2xl text-left border-t-2 border-t-indigo-500">
+                    <span class="text-xs font-semibold text-indigo-400 uppercase tracking-wider block mb-2 flex items-center">
+                        <i data-lucide="users" class="w-4 h-4 mr-1.5"></i> Equipo de Trabajo
                     </span>
-                    <span class="text-xs text-slate-500 mt-1 block">E-commerce de moda</span>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-xs">
+                        <div class="bg-slate-900/90 border border-slate-800 p-2.5 rounded-xl font-semibold text-slate-200 flex items-center">
+                            <span class="w-2 h-2 rounded-full bg-indigo-400 mr-2"></span> Emily Cardona
+                        </div>
+                        <div class="bg-slate-900/90 border border-slate-800 p-2.5 rounded-xl font-semibold text-slate-200 flex items-center">
+                            <span class="w-2 h-2 rounded-full bg-cyan-400 mr-2"></span> Alyson Henao Fernández
+                        </div>
+                        <div class="bg-slate-900/90 border border-slate-800 p-2.5 rounded-xl font-semibold text-slate-200 flex items-center">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400 mr-2"></span> Samuel Arango
+                        </div>
+                        <div class="bg-slate-900/90 border border-slate-800 p-2.5 rounded-xl font-semibold text-slate-200 flex items-center">
+                            <span class="w-2 h-2 rounded-full bg-amber-400 mr-2"></span> Mateo Sanz
+                        </div>
+                    </div>
                 </div>
 
-                <div class="glass-card p-4 rounded-2xl text-left border-l-4 border-l-cyan-500">
-                    <span class="text-xs font-medium text-slate-400 block uppercase tracking-wider">Metodología</span>
-                    <span class="text-lg font-bold text-white flex items-center mt-1">
-                        <i data-lucide="eye" class="w-4 h-4 mr-2 text-cyan-400"></i> OSINT 100% Pasivo
-                    </span>
-                    <span class="text-xs text-slate-500 mt-1 block">Se mira, no se toca</span>
-                </div>
+                <!-- Org & Course Meta Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
+                    <div class="glass-card p-4 rounded-2xl text-left border-l-4 border-l-indigo-500">
+                        <span class="text-xs font-medium text-slate-400 block uppercase tracking-wider">Organización</span>
+                        <span class="text-base font-bold text-white flex items-center mt-1">
+                            <i data-lucide="shopping-bag" class="w-4 h-4 mr-2 text-indigo-400"></i> Monastery.com.co
+                        </span>
+                        <span class="text-[11px] text-slate-500 mt-0.5 block">E-commerce de moda</span>
+                    </div>
 
-                <div class="glass-card p-4 rounded-2xl text-left border-l-4 border-l-emerald-500">
-                    <span class="text-xs font-medium text-slate-400 block uppercase tracking-wider">Curso</span>
-                    <span class="text-lg font-bold text-white flex items-center mt-1">
-                        <i data-lucide="graduation-cap" class="w-4 h-4 mr-2 text-emerald-400"></i> ST1630
-                    </span>
-                    <span class="text-xs text-slate-500 mt-1 block">Agosto 2026</span>
+                    <div class="glass-card p-4 rounded-2xl text-left border-l-4 border-l-cyan-500">
+                        <span class="text-xs font-medium text-slate-400 block uppercase tracking-wider">Metodología</span>
+                        <span class="text-base font-bold text-white flex items-center mt-1">
+                            <i data-lucide="eye" class="w-4 h-4 mr-2 text-cyan-400"></i> OSINT 100% Pasivo
+                        </span>
+                        <span class="text-[11px] text-slate-500 mt-0.5 block">Se mira, no se toca</span>
+                    </div>
+
+                    <div class="glass-card p-4 rounded-2xl text-left border-l-4 border-l-emerald-500">
+                        <span class="text-xs font-medium text-slate-400 block uppercase tracking-wider">Curso</span>
+                        <span class="text-base font-bold text-white flex items-center mt-1">
+                            <i data-lucide="graduation-cap" class="w-4 h-4 mr-2 text-emerald-400"></i> ST1630
+                        </span>
+                        <span class="text-[11px] text-slate-500 mt-0.5 block">Agosto 2026</span>
+                    </div>
                 </div>
             </div>
         </section>
