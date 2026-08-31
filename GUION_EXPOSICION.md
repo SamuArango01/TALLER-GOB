@@ -28,7 +28,19 @@
 
 ---
 
-## 📄 Diapositiva 3: Lectura Técnica & Causa Raíz
+## 📄 Diapositiva 3: Evidencias Fotográficas Documentadas
+**🗣️ Presenta:** **Alyson Henao Fernández**
+
+* **Qué decir:**
+  > "En esta diapositiva presentamos las **capturas fotográficas reales** que respaldan nuestro informe OSINT:
+  >
+  > * En la primera imagen vemos la respuesta JSON viva del endpoint `/cart.js` de Shopify.
+  > * En la segunda imagen apreciamos el comentario expuesto en el archivo CSS guardado en **Wayback Machine**, donde se observa explícitamente la firma de autoría (`Author: Patrick Glynn`).
+  > * En la tercera imagen mostramos la verificación del repositorio GitHub *hamburguers*, confirmando que solo contenía código de práctica de animaciones CSS."
+
+---
+
+## 📄 Diapositiva 4: Lectura Técnica & Causa Raíz
 **🗣️ Presenta:** **Samuel Arango**
 
 * **Qué decir:**
@@ -40,7 +52,7 @@
 
 ---
 
-## 📄 Diapositiva 4: Lectura de Gobernanza de Datos (DMBOK)
+## 📄 Diapositiva 5: Lectura de Gobernanza de Datos (DMBOK)
 **🗣️ Presenta:** **Mateo Sanz**
 
 * **Qué decir:**
@@ -56,7 +68,7 @@
 
 ---
 
-## 📄 Diapositiva 5: Propuesta Comercial de Subsanación
+## 📄 Diapositiva 6: Propuesta Comercial de Subsanación
 **🗣️ Presenta:** **Emily Cardona** *(o en conjunto con Samuel)*
 
 * **Qué decir:**
@@ -71,7 +83,7 @@
 
 ---
 
-## 📄 Diapositiva 6: Cierre y Conclusión Executiva
+## 📄 Diapositiva 7: Cierre y Conclusión Ejecutiva
 **🗣️ Presenta:** **Alyson Henao Fernández**
 
 * **Qué decir:**
