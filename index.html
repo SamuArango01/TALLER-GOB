@@ -334,47 +334,54 @@
             </div>
         </section>
 
-        <!-- SLIDE 4: LECTURA DE GOBERNANZA DMBOK -->
+        <!-- SLIDE 4: LECTURA DE GOBERNANZA DMBOK (ROLES & RESPONSABILIDADES) -->
         <section id="slide-4" class="slide flex-col w-full space-y-6">
-            <div class="border-b border-slate-800 pb-3">
-                <span class="text-xs font-bold text-indigo-400 uppercase tracking-widest">Movimiento 4</span>
-                <h2 class="text-2xl md:text-3xl font-bold text-white">Lectura de Gobernanza de Datos (DMBOK)</h2>
+            <div class="border-b border-slate-800 pb-3 flex justify-between items-end">
+                <div>
+                    <span class="text-xs font-bold text-indigo-400 uppercase tracking-widest">Movimiento 4</span>
+                    <h2 class="text-2xl md:text-3xl font-bold text-white">Lectura de Gobernanza de Datos (DMBOK)</h2>
+                </div>
+                <span class="text-xs bg-slate-900 border border-slate-800 text-indigo-300 border-indigo-500/30 px-3 py-1 rounded-lg hidden md:block">DMBOK · Roles & Responsabilidades</span>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Data Owner (Estratégico) -->
                 <div class="glass-card p-5 rounded-2xl space-y-2 border-l-4 border-l-indigo-500">
                     <div class="flex items-center text-indigo-400 font-bold text-sm">
-                        <i data-lucide="user-check" class="w-4 h-4 mr-2"></i> Dueño del Dato (Data Owner)
+                        <i data-lucide="crown" class="w-4 h-4 mr-2"></i> Data Owner (Decisión Estratégica)
                     </div>
-                    <p class="text-xs text-slate-300">
-                        Ausencia de un custodia formal (<strong class="text-white">Head of E-commerce / IT Lead</strong>) responsable de autorizar y auditar todo contenido y metadato desplegado en CDN pública.
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Responsable ejecutivo del dominio de activos de información (<strong class="text-white">Head of E-commerce / CISO</strong>). Define el valor del dato, las políticas de publicación y acepta el nivel de riesgo de la información expuesta.
                     </p>
                 </div>
 
+                <!-- Data Steward (Custodia Operativa) -->
                 <div class="glass-card p-5 rounded-2xl space-y-2 border-l-4 border-l-cyan-500">
                     <div class="flex items-center text-cyan-400 font-bold text-sm">
-                        <i data-lucide="lock" class="w-4 h-4 mr-2"></i> Clasificación de la Información
+                        <i data-lucide="user-check" class="w-4 h-4 mr-2"></i> Data Steward (Custodia & Auditoría Operativa)
                     </div>
-                    <p class="text-xs text-slate-300">
-                        Los nombres de desarrolladores se trataron como públicos. Según DMBOK, deben clasificarse como <strong class="text-white">Información Interna / Restringida</strong>.
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Custodio técnico operativo (<strong class="text-white">Lead Frontend / DevOps Steward</strong>). Encargado de la calidad, sanitización de comentarios/metadatos y auditoría continua de los recursos web públicos antes del despliegue.
                     </p>
                 </div>
 
+                <!-- Clasificación de la Información -->
                 <div class="glass-card p-5 rounded-2xl space-y-2 border-l-4 border-l-emerald-500">
                     <div class="flex items-center text-emerald-400 font-bold text-sm">
-                        <i data-lucide="file-check" class="w-4 h-4 mr-2"></i> Política de Sanitización Web
+                        <i data-lucide="lock" class="w-4 h-4 mr-2"></i> Clasificación de Activos (DMBOK)
                     </div>
-                    <p class="text-xs text-slate-300">
-                        Falta de regla mandatoria de <strong class="text-white">Build Sanitization</strong> que elimine comentarios, nombres de desarrolladores y entornos de pruebas antes de pasar a producción.
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Los nombres de desarrolladores e infraestructura interna se trataron como públicos. Según DMBOK, deben ser etiquetados formalmente como <strong class="text-white">Información Interna / Restringida</strong>.
                     </p>
                 </div>
 
+                <!-- Política de Sanitización & Comité -->
                 <div class="glass-card p-5 rounded-2xl space-y-2 border-l-4 border-l-amber-500">
                     <div class="flex items-center text-amber-400 font-bold text-sm">
-                        <i data-lucide="users" class="w-4 h-4 mr-2"></i> Rol del Comité de Gobernanza
+                        <i data-lucide="file-check-2" class="w-4 h-4 mr-2"></i> Política de Sanitización & Comité
                     </div>
-                    <p class="text-xs text-slate-300">
-                        El Comité actúa como el ente aprobador que exige auditorías OSINT periódicas antes de autorizar nuevos lanzamientos o actualizaciones.
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        El Comité de Gobernanza debe institucionalizar la política mandatoria de <strong class="text-white">Build Sanitization</strong> y exigir revisiones pasivas periódicas de la superficie expuesta.
                     </p>
                 </div>
             </div>

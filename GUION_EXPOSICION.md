@@ -44,12 +44,13 @@
 **🗣️ Presenta:** **Mateo Sanz**
 
 * **Qué decir:**
-  > "Aquí es donde conectamos la ciberseguridad con la **Gobernanza de Datos bajo el marco DMBOK**. ¿Cómo un Comité de Gobernanza habría prevenido esta exposición?
+  > "Aquí es donde conectamos la ciberseguridad con la **Gobernanza de Datos bajo el marco DMBOK**, definiendo claramente los roles y responsabilidades sobre los activos expuestos:
   >
-  > 1. **Data Owner (Dueño del Dato):** Falta asignar una custodia clara (*Head of E-commerce / IT Lead*) que autorice formalmente cada activo que se despliega en producción.
-  > 2. **Clasificación de la Información:** Los datos personales e identidades del equipo técnico no debieron tratarse como públicos, sino clasificarse como **Información Interna o Restringida**.
-  > 3. **Política de Sanitización (Build Sanitization):** Faltó una regla mandatoria que ejecute la limpieza automática de comentarios y nombres de autores en los archivos antes de compilarlos para producción.
-  > 4. **Rol del Comité:** El Comité debe exigir auditorías OSINT periódicas antes de aprobar nuevos lanzamientos."
+  > 1. **Diferenciación de Roles DMBOK (Data Owner vs. Data Steward):**
+  >    * **Data Owner (Dueño del Dato):** Es el líder ejecutivo (*Head of E-commerce / CISO*) responsable de las **decisiones estratégicas**, el valor del negocio, las políticas de publicación y la aceptación del riesgo sobre el dominio.
+  >    * **Data Steward (Custodio del Dato):** Es la persona con la **responsabilidad operativa y técnica** (*Lead Frontend / DevOps Steward*) encargada de auditar la calidad, ejecutar la sanitización de comentarios y realizar la custodia formal del activo web antes de salir a producción.
+  > 2. **Clasificación de la Información:** Las identidades del equipo técnico no debieron tratarse como públicas, sino etiquetarse como **Información Interna o Restringida**.
+  > 3. **Política de Sanitización (Build Sanitization) & Comité:** El Comité de Gobernanza debe institucionalizar la regla de desaprobación automática de código con comentarios o metadatos de desarrollador antes del despliegue."
 
 ---
 
